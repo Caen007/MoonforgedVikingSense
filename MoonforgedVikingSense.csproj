@@ -1,0 +1,59 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net472</TargetFramework>
+		<LangVersion>7.3</LangVersion>
+		<Nullable>disable</Nullable>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<AssemblyName>MoonforgedVikingSense</AssemblyName>
+		<RootNamespace>Moonforged.VikingSense</RootNamespace>
+		<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+		<Deterministic>true</Deterministic>
+
+		<ValheimDir Condition="'$(ValheimDir)' == ''">C:\Program Files (x86)\Steam\steamapps\common\Valheim</ValheimDir>
+		<ValheimManagedDir>$(ValheimDir)\valheim_Data\Managed</ValheimManagedDir>
+		<BepInExCoreDir>$(ValheimDir)\BepInEx\core</BepInExCoreDir>
+		<JotunnDir>$(ValheimDir)\BepInEx\plugins\Jotunn</JotunnDir>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="assembly_valheim">
+			<HintPath>$(ValheimManagedDir)\assembly_valheim.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+
+		<Reference Include="BepInEx">
+			<HintPath>$(BepInExCoreDir)\BepInEx.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+
+		<Reference Include="Jotunn">
+			<HintPath>$(JotunnDir)\Jotunn.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+
+		<Reference Include="UnityEngine">
+			<HintPath>$(ValheimManagedDir)\UnityEngine.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+
+		<Reference Include="UnityEngine.CoreModule">
+			<HintPath>$(ValheimManagedDir)\UnityEngine.CoreModule.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+
+		<Reference Include="UnityEngine.PhysicsModule">
+			<HintPath>$(ValheimManagedDir)\UnityEngine.PhysicsModule.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+
+		<Reference Include="UnityEngine.IMGUIModule">
+			<HintPath>$(ValheimManagedDir)\UnityEngine.IMGUIModule.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+
+		<Reference Include="UnityEngine.TextRenderingModule">
+			<HintPath>$(ValheimManagedDir)\UnityEngine.TextRenderingModule.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+	</ItemGroup>
+</Project>

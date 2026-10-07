@@ -1,0 +1,15 @@
+{
+    "name": "MoonforgedVikingSense",
+    "version_number": "1.0.0",
+    "website_url": "https://github.com/Caen007/MoonforgedVikingSense",
+    "description": "Scan nearby resources, visible ore deposits, structures, caves, creatures and players. Features resource-colored highlights, glowing flora, a configurable scan key and cooldown display. Scan while moving; effects are visible only to you.",
+    "dependencies": [
+        "denikson-BepInExPack_Valheim-5.4.2351",
+        "ValheimModding-Jotunn-2.30.2"
+    ],
+    "categories": [
+        "Mods",
+        "Client-side",
+        "Deep North Update"
+    ]
+}
